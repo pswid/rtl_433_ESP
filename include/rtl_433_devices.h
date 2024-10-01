@@ -262,8 +262,8 @@
     DECL(oregon_scientific)          \
     DECL(tfa_twin_plus_303049)       \
 /* Add new personal decoders here. */
-#  define NUMOF_OOK_DEVICES 0
-#  define NUMOF_FSK_DEVICES 6
+#  define NUMOF_OOK_DEVICES 6
+#  define NUMOF_FSK_DEVICES 0
 #endif
 
 #define DECL(name) extern r_device name;

@@ -254,13 +254,13 @@
 /**
  * Subset of devices that I have access to and have tested with
  */
-#  define DEVICES         \
     /* ook modulation */
+    /* fsk modulation */
+#  define DEVICES         \
     DECL(cotech_36_7959)             \
     DECL(lacrosse_tx141x)            \
     DECL(oregon_scientific)          \
     DECL(tfa_twin_plus_303049)       \
-    /* fsk modulation */
     DECL(bresser_5in1)               \
     DECL(bresser_6in1)               \
     DECL(bresser_7in1)               \

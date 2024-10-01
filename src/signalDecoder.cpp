@@ -327,7 +327,16 @@ void rtlSetup() {
     // end of fragment
 
 #else
-    memcpy(&cfg->devices[0], &lacrosse_tx141x, sizeof(r_device));
+    if (rtl_433_ESP::ookModulation) {
+      memcpy(&cfg->devices[0], &cotech_36_7959, sizeof(r_device));
+      memcpy(&cfg->devices[1], &lacrosse_tx141x, sizeof(r_device));
+      memcpy(&cfg->devices[2], &oregon_scientific, sizeof(r_device));
+      memcpy(&cfg->devices[3], &tfa_twin_plus_303049, sizeof(r_device));
+    } else {
+      memcpy(&cfg->devices[0], &bresser_5in1, sizeof(r_device));
+      memcpy(&cfg->devices[1], &bresser_6in1, sizeof(r_device));
+      memcpy(&cfg->devices[2], &bresser_7in1, sizeof(r_device));
+    }
 #endif
 
 #ifdef RTL_FLEX

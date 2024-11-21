@@ -254,11 +254,19 @@
 /**
  * Subset of devices that I have access to and have tested with
  */
+    /* ook modulation */
+    /* fsk modulation */
 #  define DEVICES         \
-    DECL(lacrosse_tx141x) \
+    DECL(cotech_36_7959)             \
+    DECL(lacrosse_tx141x)            \
+    DECL(oregon_scientific)          \
+    DECL(tfa_twin_plus_303049)       \
+    DECL(bresser_5in1)               \
+    DECL(bresser_6in1)               \
+    DECL(bresser_7in1)               \
 /* Add new personal decoders here. */
-#  define NUMOF_OOK_DEVICES 1
-#  define NUMOF_FSK_DEVICES 0
+#  define NUMOF_OOK_DEVICES 4
+#  define NUMOF_FSK_DEVICES 3
 #endif
 
 #define DECL(name) extern r_device name;
